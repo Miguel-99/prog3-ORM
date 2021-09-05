@@ -35,13 +35,13 @@ public class DetalleHistoriaClinica implements Serializable{
     @Column
     private Date fechaAtencion;
     
-    @Column
+    @Column(length = 1500)
     private String sintomas;
     
-    @Column
+    @Column(length = 1500)
     private String diagnostico;
     
-    @Column
+    @Column(length = 1500)
     private String observaciones;
     
     @ManyToOne(cascade = CascadeType.PERSIST)
